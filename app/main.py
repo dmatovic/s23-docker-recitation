@@ -41,5 +41,12 @@ def get_section_info(section_id: str):
             "end_time": "HH:MM",
             "ta": ["taName1", "taName2"]
         }
+    elif section_id == "d":
+        return {
+            "section": "Section D",
+            "start_time": "12:00",
+            "end_time": "12:50",
+            "ta": ["Mahima", "Antara"]
+        }
     else:
         raise HTTPException(status_code=404, detail="Invalid section id")
